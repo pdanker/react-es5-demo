@@ -1,7 +1,10 @@
 'use strict';
 
-ReactDOM.render(React.createElement(
-  'h1',
-  null,
-  'Hello, world!'
-), document.getElementById('root'));
+var el = React.createElement;
+
+window.onload = function() {
+    ReactDOM.render(
+        el(App),
+        document.getElementById('root')
+    )
+};
